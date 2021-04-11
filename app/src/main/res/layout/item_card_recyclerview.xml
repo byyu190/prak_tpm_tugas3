@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="15dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="#4DBFBFBF"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="55dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/take"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="260dp"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="278dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@android:drawable/ic_menu_view"
+            android:text="preview"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:cornerRadius="5dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="278dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@android:drawable/ic_menu_share"
+            android:text="share"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:cornerRadius="5dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

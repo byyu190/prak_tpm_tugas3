@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.examples.Tugas3">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="LIBRARY"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tugas3">
+        <activity android:name="com.examples.Tugas3.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.examples.Tugas3.DetailActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
